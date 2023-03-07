@@ -40,7 +40,6 @@ h2 {
 }
 
 .container {
-  border: 1px solid black;
   max-width: 940px;
   margin: 0 auto;
   padding: 0 15px;
@@ -84,7 +83,6 @@ nav {
 
 }
 .home__title {
-  border: saddlebrown solid 1px;
   font-family: 'Gilroy-Bold';
   max-width: 125px;
   font-size: 48px;
@@ -207,6 +205,23 @@ min-height: 35px;
   color: #828282;
 }
 
+/* секция контакты  */
+
+footer {
+  padding-top: 114px;
+  padding-bottom: 123px;
+  background:#F6F6F6;
+  
+}
+.contacts_title {
+  margin-bottom: 25px;
+}
+
+.footer__text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 button {
   font-family: 'Gilroy-Bold';
   font-size: 18px;
@@ -232,3 +247,8 @@ button {
   margin-bottom: 49px;
 }
 
+@media (max-width:528px) {
+  button {
+    max-width: 200%;
+  }
+}
