@@ -98,6 +98,17 @@ nav {
   height: auto;
 }
 
+@media (max-width: 610px) {
+  .home__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .home__title {
+    margin-bottom: 24px;
+  }
+}
+
 
 /* Секция about */
 .about {
@@ -110,9 +121,15 @@ nav {
 .about_text {
   max-width: 485px;
   text-align: center;
+  padding: 0 30px;
+
 }
 .about_text:not(:last-child) {
   margin-bottom: 43px;
+}
+
+.about_title {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 610px) {
@@ -153,6 +170,11 @@ nav {
   
 }
 
+.stars {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width:610px) {
 .item {
   margin: 0 50px 80px 50px;
@@ -191,6 +213,64 @@ nav {
 min-height: 35px;
 }
 
+/* Секция портфолио */
+.portfolio {
+  background: #F6F6F6;
+  padding-top: 113px;
+  padding-bottom: 96px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.portfolio__main {
+  margin-bottom: 50px;
+  text-align: center;
+ 
+}
+
+img {
+  max-width: 100%;
+}
+
+.examples {
+  margin-bottom: 99px;
+  max-width: 610px;
+}
+
+.examples:last-child {
+  margin-bottom: 0px;
+}
+
+.discript {
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 43px;
+}
+
+.discript:not(:last-child) {
+  margin-bottom: 99px;
+}
+
+@media (max-width:610px) {
+  .portfolio {
+    padding-top: 81px;
+    padding-bottom: 81px;
+  }
+
+  .examples {
+    margin-bottom: 78px;
+    max-width: 100%;
+  }
+
+  .discript {
+    padding-top: 33px;
+  }
+  
+}
+
+
+
 
 /* .text {
   font-family: 'Gilroy';
@@ -199,19 +279,17 @@ min-height: 35px;
   text-align: center;
 } */
 
-.added {
+/* .added {
   font-size: 14px;
   line-height: 17px;
   color: #828282;
-}
+} */
 
 /* секция контакты  */
 
 footer {
   padding-top: 114px;
   padding-bottom: 123px;
-  background:#F6F6F6;
-  
 }
 .contacts_title {
   margin-bottom: 25px;
@@ -249,6 +327,6 @@ button {
 
 @media (max-width:528px) {
   button {
-    max-width: 200%;
+    max-width: ;
   }
 }
