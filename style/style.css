@@ -46,21 +46,139 @@ h2 {
   box-sizing: content-box;
 }
 
-/* Бургер меню */
-.header__burger {
+/* Секция header */
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: hotpink;
+  height: 100px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+ 
 }
 
-.menu-btn {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  color: #F6F6F6;
+  border-bottom: 1px solid grey;
 }
 
-.menu-btn span {
+.header__link {
+  color: grey;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #070707;
+  transition: 0.3s;
+}
+
+.hamb {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+
+@media (max-width: 610px) {
+  .menu {
+    display: none;
+  }
+
+  .hamb {
+    display: flex;
+    top: 66px;
+    right: 28px;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    z-index: 500;
+    cursor: pointer;
+  }
+
+
+
+  .bar {
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin: 6px auto;
+    background: black;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    
+  }
+
+  .popup {
+    position: fixed;
+    top: 15px;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: block;
+    transition: 0.3s;
+
+  }
+
+  .popup.open {
+    background: white;
+    left: 0;
+  }
+
+ .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+
+  .header__link {
+    width: 100%;
+    display: flex;
+    padding: 68px 26px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #828282;
+  }
+
+  .header__link:hover {
+    color: black;
+  }
+
+
+
+
+
+
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-9.7px) rotate(-45deg);
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+}
+
+/* .bar {
   width: 30px;
   height: 3px;
   position: absolute;
@@ -68,8 +186,21 @@ h2 {
   left: 50%;
   background: black;
   transform: translate(-50%, -50%);
-  transition: all 0.3s;
+  transition: all 0.3s; */
+/* } */
+/* Бургер меню */
+
+
+
+/* .menu-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
+
+
 
 .menu-btn span:nth-of-type(2) {
   top: calc(50% - 5px);
@@ -79,17 +210,7 @@ h2 {
   top: calc(50% + 5px);
 }
 
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  background: yellowgreen;
-  transform: translateX(100%);
-  transition: 0.5s;
-}
+
 
 .menu.active {
   transform: translateX(0);
@@ -114,33 +235,11 @@ h2 {
 .menu-btn.active span:nth-of-type(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-}
+} */
 
-/* Секция header */
-nav {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #828282;
-}
 
-.header__link {
-  display: block;
-  padding: 32px 0;
-  color: #828282;
-  transition: 0.3s;
-  text-decoration: none;
-}
 
-.header__link:hover {
-  color: #070707;
-  transition: 0.3s;
-}
 
-@media (max-width: 610px) {
-  header {
-    display: none;
-  }
-}
 
 /* Секция home */
 
