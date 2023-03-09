@@ -2,6 +2,7 @@ const hamb = document.querySelector(".hamb__field");
 const popup = document.querySelector(".popup");
 
 const menu = document.querySelector(".menu").cloneNode(1);
+const body = document.body;
 
 
 hamb.addEventListener('click', hambHandler);
