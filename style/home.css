@@ -1,0 +1,40 @@
+.home {
+  padding: 40px 0 104px;
+}
+.home__header {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+.home__title {
+  font-family: 'Gilroy-Bold';
+  max-width: 125px;
+  font-size: 48px;
+  line-height: 59px;
+}
+.home__bio {
+  max-width: 156px;
+  margin-bottom: 7px;
+}
+.home__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 610px) {
+  .home {
+    padding-bottom: 83px;
+  }
+  .home__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .home__title {
+    margin-bottom: 24px;
+  }
+}

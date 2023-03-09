@@ -1,5 +1,12 @@
+@import url(./footer.css);
+@import url(./portfolio.css);
+@import url(./skills.css);
+@import url(./about.css);
+@import url(./home.css);
+@import url(./header.css);
+
 @font-face {
-    font-family: 'Gilroy';
+    font-family:'Gilroy';
     src:
         url('../fonts/Gilroy-Medium.woff2') format('woff2'),
         url('../fonts/Gilroy-Medium.woff') format('woff');
@@ -8,12 +15,43 @@
 }
 
 @font-face {
-    font-family: 'Gilroy-Bold';
+    font-family:'Gilroy-Bold';
     src:
         url('../fonts/Gilroy-Bold.woff2') format('woff2'),
         url('../fonts/Gilroy-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
+}
+
+/* для карточек аэтем сделать видс 166px для страс видс 100%
+картинку для программс не оборавчиватьв див 
+сделать для программся картинок дисплпей блок
+
+серый фон должен быть на ширине контейнера 
+перед закрывающим 
+
+порфтфолио кратнки див эксэплес убрать макс видс
+убрать див экспэпл бокс
+подпись под картинкой сделать марджин сделать под картинкой
+все картинки в портфолил дисплей блок
+
+
+контакты от последниего подписи убрать мардин топ и мардин боттон
+
+для конпоки сенд мессэдж ссылока и атрит мэйл ту
+
+сдлеать зону для бургер меню побольше
+и чтобы крестик не уходил в блок
+эллменты в попап раздвигаем 
+
+улучить 
+
+разбить ссс на файлио 
+
+
+*/
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -28,8 +66,6 @@ body {
   font-size: 18px;
   line-height: 22px;
 }
-
-
 
 h2 {
   font-family: 'Gilroy-Bold';
@@ -46,468 +82,5 @@ h2 {
   box-sizing: content-box;
 }
 
-/* Секция header */
-.navbar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background: hotpink;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
- 
-}
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
-  align-items: center;
-  color: #F6F6F6;
-  border-bottom: 1px solid grey;
-}
 
-.header__link {
-  color: grey;
-  text-decoration: none;
-}
-
-.header__link:hover {
-  color: #070707;
-  transition: 0.3s;
-}
-
-.hamb {
-  display: none;
-}
-
-.popup {
-  display: none;
-}
-
-@media (max-width: 610px) {
-  .menu {
-    display: none;
-  }
-
-  .hamb {
-    display: flex;
-    top: 66px;
-    right: 28px;
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    z-index: 500;
-    cursor: pointer;
-  }
-
-
-
-  .bar {
-    display: block;
-    width: 40px;
-    height: 4px;
-    margin: 6px auto;
-    background: black;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s;
-    
-  }
-
-  .popup {
-    position: fixed;
-    top: 15px;
-    left: 100%;
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-    display: block;
-    transition: 0.3s;
-
-  }
-
-  .popup.open {
-    background: white;
-    left: 0;
-  }
-
- .popup .menu {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    padding: 50px 0;
-    overflow: auto;
-  }
-
-  .header__link {
-    width: 100%;
-    display: flex;
-    padding: 68px 26px;
-    font-size: 34px;
-    font-weight: bold;
-    color: #828282;
-  }
-
-  .header__link:hover {
-    color: black;
-  }
-
-
-
-
-
-
-  .hamb__field.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamb__field.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-
-  .hamb__field.active .bar:nth-child(3) {
-    transform: translateY(-9.7px) rotate(-45deg);
-  }
-
-  body.noscroll {
-    overflow: hidden;
-  }
-}
-
-/* .bar {
-  width: 30px;
-  height: 3px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: black;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s; */
-/* } */
-/* Бургер меню */
-
-
-
-/* .menu-btn {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-}
-
-
-
-.menu-btn span:nth-of-type(2) {
-  top: calc(50% - 5px);
-}
-
-.menu-btn span:nth-of-type(3) {
-  top: calc(50% + 5px);
-}
-
-
-
-.menu.active {
-  transform: translateX(0);
-}
-
-.menu li, a{
-  list-style-type: none;
-  text-decoration: none;
-  padding-bottom: 68px;
-}
-
-
-.menu-btn.active span:first-of-type {
-  transform: translateX(100%);
-}
-
-.menu-btn.active span:nth-of-type(2) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.menu-btn.active span:nth-of-type(3) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-} */
-
-
-
-
-
-/* Секция home */
-
-.home__header {
-  padding-top: 40px;
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-
-}
-.home__title {
-  font-family: 'Gilroy-Bold';
-  max-width: 125px;
-  font-size: 48px;
-  line-height: 59px;
-}
-.home__bio {
-  max-width: 156px;
-  margin-bottom: 7px;
-}
-.home__image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: 610px) {
-  .home__header {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .home__title {
-    margin-bottom: 24px;
-  }
-}
-
-
-/* Секция about */
-.about {
-  background: #F6F6F6;
-  display: flex;
-  padding-top: 120px;
-  padding-bottom: 107px;
-}
-
-.about_text {
-  max-width: 485px;
-  text-align: center;
-  padding: 0 30px;
-
-}
-.about_text:not(:last-child) {
-  margin-bottom: 43px;
-}
-
-.about_title {
-  margin-bottom: 20px;
-}
-
-@media (max-width: 610px) {
-  .about {
-    padding: 81px 0 76px;
-  }
-  .about_title {
-    margin-bottom: 29px;
-    color: #000;
-  }
-}
-
-/* Секция c иконками */
-.skills {
-  padding-top: 91px;
-  padding-bottom: 110px;
-}
-
-.skills__title {
-  margin-bottom: 50px;
-}
-
-.skills__text {
-  margin-bottom: 83px;
-  text-align: center;
-}
-
-.added {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 23px;
-}
-
-.programms {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  
-}
-
-.stars {
-  display: flex;
-  justify-content: space-between;
-}
-
-@media (max-width:610px) {
-.item {
-  margin: 0 50px 80px 50px;
- 
-}
-
-.programms {
-  justify-content: center;
-  justify-content: space-between;
-  
-  padding: 0 30px 0 30px;
-}
-  
-}
-
-@media (max-width:528px) {
-.item {
-  margin-bottom: 80px;
-  
-  align-items: center;
-}
-  .programms {
-  justify-content: center;
-  
-  padding: 0 30px 0 30px;
-}
-}
-
-.icon_img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.named {
-min-height: 35px;
-}
-
-/* Секция портфолио */
-.portfolio {
-  background: #F6F6F6;
-  padding-top: 113px;
-  padding-bottom: 96px;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.portfolio__main {
-  margin-bottom: 50px;
-  text-align: center;
- 
-}
-
-img {
-  max-width: 100%;
-}
-
-.examples {
-  margin-bottom: 99px;
-  max-width: 610px;
-}
-
-.examples:last-child {
-  margin-bottom: 0px;
-}
-
-.discript {
-  text-decoration: underline;
-  text-align: center;
-  padding-top: 43px;
-}
-
-.discript:not(:last-child) {
-  margin-bottom: 99px;
-}
-
-@media (max-width:610px) {
-  .portfolio {
-    padding-top: 81px;
-    padding-bottom: 81px;
-  }
-
-  .examples {
-    margin-bottom: 78px;
-    max-width: 100%;
-  }
-
-  .discript {
-    padding-top: 33px;
-  }
-  
-}
-
-
-
-
-/* .text {
-  font-family: 'Gilroy';
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-} */
-
-/* .added {
-  font-size: 14px;
-  line-height: 17px;
-  color: #828282;
-} */
-
-/* секция контакты  */
-
-footer {
-  padding-top: 114px;
-  padding-bottom: 123px;
-}
-.contacts_title {
-  margin-bottom: 25px;
-}
-
-.footer__text {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-button {
-  font-family: 'Gilroy-Bold';
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #FFFFFF; 
-  background: black;
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  padding: 12px 30px;
-  border: 0;
-  border-radius: 50px;
-  cursor: pointer;
-  margin-bottom: 40px;
-}
-
-.link_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 60px;
-  margin-bottom: 49px;
-}
-
-@media (max-width:610px) {
-  footer {
-  padding-top: 82px;
-  padding-bottom: 95px;
-  }
-
-  button {
-    padding: 12px 97px;
-    transition: 0.5s;
-  }
-}
-
-@media (min-width:610px) {
-  button {
-    transition: 0.5s;
-  }
-}
