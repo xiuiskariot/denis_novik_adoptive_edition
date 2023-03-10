@@ -17,6 +17,7 @@
   margin-bottom: 43px;
 }
 
+
 .examples {
   margin-bottom: 99px;
 }
@@ -28,6 +29,7 @@
 .discript {
   display: block;
   text-align: center;
+  color: black;
 }
 
 .discript:not(:last-child) {

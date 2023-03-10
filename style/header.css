@@ -4,7 +4,7 @@
   top: 0;
   width: 100%;
   background: hotpink;
-  height: 100px;
+  height: 88px;
   display: flex;
   justify-content: space-between;
  
@@ -13,7 +13,7 @@
 .menu {
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 88px;
   align-items: center;
   color: #F6F6F6;
   border-bottom: 1px solid grey;
